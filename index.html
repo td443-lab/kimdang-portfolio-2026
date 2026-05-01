@@ -75,20 +75,26 @@
             human and more usable in everyday life.
           </p>
           <div class="intro__meta" aria-label="About details">
-            <section class="intro__meta-block" aria-labelledby="education-heading">
-              <span class="intro__meta-marker" aria-hidden="true">+</span>
-              <div class="intro__meta-copy">
-                <h3 class="intro__meta-heading" id="education-heading">Education</h3>
-                <p class="intro__meta-title">Cornell University</p>
+            <section class="intro__meta-item">
+              <button
+                class="intro__meta-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="education-panel"
+              >
+                <span class="intro__meta-marker" aria-hidden="true">+</span>
+                <span class="intro__meta-heading">Education</span>
+              </button>
+              <div class="intro__meta-panel" id="education-panel" hidden>
                 <p class="intro__meta-text">
-                Research and design work spanning health technology, machine
-                learning, wearable systems, and creative practice.
+                  M.S. in Information Science, Health Tech concentration, Cornell University.
+                </p>
+                <p class="intro__meta-text">
+                  B.A. in Neuroscience, Boston University.
                 </p>
               </div>
             </section>
           </div>
-          <!-- Replace this mailto with your Google Drive resume URL when it is ready. -->
-          <a class="text-link" href="mailto:td443@cornell.edu?subject=Resume%20Request">Resume</a>
         </div>
       </section>
 
@@ -127,6 +133,7 @@
           <article class="project-card project-card--wide">
             <div class="project-card__media project-card__media--image project-card__media--wearable-image">
               <img
+                class="project-card__wearable-auris"
                 src="assets/photos/Auris/auris image.png"
                 alt="Auris wearable earring render showing the jewelry-grade dehydration support concept"
               />
@@ -313,6 +320,7 @@
 
               <figure class="fiber-slide">
                 <img
+                  class="fiber-slide__image--cornell"
                   src="assets/photos/creative makes/cornell tech on mic/Screenshot 2026-05-01 at 12.32.59 AM.jpeg"
                   alt="Grid view of Cornell Tech on Mic social media posts"
                 />
