@@ -27,23 +27,24 @@
         <h1 class="site-header__title">Kim Dang</h1>
       </div>
 
-      <nav class="site-nav" aria-label="Primary">
-        <button
-          class="site-nav__toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-menu"
-        >
-          Menu
-        </button>
-        <div class="site-nav__menu" id="site-menu">
-          <a class="site-nav__link" href="#about">About</a>
-          <a class="site-nav__link" href="#wearables">Wearable Research</a>
-          <a class="site-nav__link" href="#ml-models">ML Models Research</a>
-          <a class="site-nav__link" href="#creative-practice">Creative Practice</a>
-        </div>
-      </nav>
     </header>
+
+    <nav class="site-nav" aria-label="Primary">
+      <button
+        class="site-nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        Menu
+      </button>
+      <div class="site-nav__menu" id="site-menu">
+        <a class="site-nav__link" href="#about">About</a>
+        <a class="site-nav__link" href="#wearables">Wearable Research</a>
+        <a class="site-nav__link" href="#ml-models">ML Models Research</a>
+        <a class="site-nav__link" href="#creative-practice">Creative Practice</a>
+      </div>
+    </nav>
 
     <main id="main-content">
       <section class="intro reveal" id="about">
@@ -255,20 +256,18 @@
             </p>
           </div>
 
+          <div class="fiber-showcase__controls" aria-label="Creative practice showcase controls">
+            <button class="fiber-showcase__button" type="button" data-carousel-prev aria-label="Previous creative practice slide">
+              Prev
+            </button>
+            <button class="fiber-showcase__button" type="button" data-carousel-next aria-label="Next creative practice slide">
+              Next
+            </button>
+          </div>
+
           <div class="fiber-showcase__viewport" id="fiber-showcase-viewport" tabindex="0">
             <div class="fiber-showcase__track">
               <figure class="fiber-slide is-active">
-                <img
-                  src="assets/photos/creative makes/crochet coasters/IMG_1031.JPG"
-                  alt="Crocheted coasters arranged in a grid on white fabric"
-                />
-                <figcaption>
-                  <span class="fiber-slide__title">Crochet coasters</span>
-                  <span class="fiber-slide__meta">Pattern, color, and motif studies in small-format crochet pieces</span>
-                </figcaption>
-              </figure>
-
-              <figure class="fiber-slide">
                 <img
                   src="assets/photos/creative makes/e waste jewelry/IMG_2739.JPG"
                   alt="E-waste jewelry pieces arranged on a gray surface"
@@ -281,23 +280,23 @@
 
               <figure class="fiber-slide">
                 <img
+                  src="assets/photos/creative makes/crochet coasters/IMG_1031.JPG"
+                  alt="Crocheted coasters arranged in a grid on white fabric"
+                />
+                <figcaption>
+                  <span class="fiber-slide__title">Crochet coasters</span>
+                  <span class="fiber-slide__meta">Pattern, color, and motif studies in small-format crochet pieces</span>
+                </figcaption>
+              </figure>
+
+              <figure class="fiber-slide">
+                <img
                   src="assets/photos/creative makes/fiber social/IMG_0967.JPG"
                   alt="People crocheting together around a table during a fiber social"
                 />
                 <figcaption>
                   <span class="fiber-slide__title">Fiber social</span>
                   <span class="fiber-slide__meta">Community making through crochet and knit gatherings I helped organize</span>
-                </figcaption>
-              </figure>
-
-              <figure class="fiber-slide">
-                <img
-                  src="assets/photos/creative makes/other ventures/weaving-study.jpg"
-                  alt="Weaving in progress on a wooden loom"
-                />
-                <figcaption>
-                  <span class="fiber-slide__title">Other ventures</span>
-                  <span class="fiber-slide__meta">Newer experiments in weaving and textile process beyond crochet and knit</span>
                 </figcaption>
               </figure>
 
@@ -322,16 +321,18 @@
                   <span class="fiber-slide__meta">A social media interview page covering student lifestyle, school life, fashion, advice, and campus activities</span>
                 </figcaption>
               </figure>
-            </div>
-          </div>
 
-          <div class="fiber-showcase__controls" aria-label="Creative practice showcase controls">
-            <button class="fiber-showcase__button" type="button" data-carousel-prev aria-label="Previous creative practice slide">
-              Prev
-            </button>
-            <button class="fiber-showcase__button" type="button" data-carousel-next aria-label="Next creative practice slide">
-              Next
-            </button>
+              <figure class="fiber-slide">
+                <img
+                  src="assets/photos/creative makes/other ventures/weaving-study.jpg"
+                  alt="Weaving in progress on a wooden loom"
+                />
+                <figcaption>
+                  <span class="fiber-slide__title">Weaving adventure</span>
+                  <span class="fiber-slide__meta">Newer experiments in weaving and textile process beyond crochet and knit</span>
+                </figcaption>
+              </figure>
+            </div>
           </div>
 
           <div class="fiber-showcase__dots" aria-label="Creative practice slide selection">
