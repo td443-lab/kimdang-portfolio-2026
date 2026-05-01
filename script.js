@@ -4,7 +4,6 @@ const navLinks = Array.from(document.querySelectorAll(".site-nav__link"));
 const sections = Array.from(document.querySelectorAll("main section[id]"));
 const revealItems = document.querySelectorAll(".reveal");
 const carousel = document.querySelector("[data-carousel]");
-const metaToggles = Array.from(document.querySelectorAll(".intro__meta-toggle"));
 
 if (navToggle && navMenu) {
   navToggle.addEventListener("click", () => {
@@ -76,23 +75,6 @@ if ("IntersectionObserver" in window && revealItems.length) {
   revealItems.forEach((item) => revealObserver.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
-}
-
-if (metaToggles.length) {
-  metaToggles.forEach((toggle) => {
-    const panelId = toggle.getAttribute("aria-controls");
-    const panel = panelId ? document.getElementById(panelId) : null;
-
-    toggle.addEventListener("click", () => {
-      if (!panel) {
-        return;
-      }
-
-      const expanded = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!expanded));
-      panel.hidden = expanded;
-    });
-  });
 }
 
 if (carousel) {

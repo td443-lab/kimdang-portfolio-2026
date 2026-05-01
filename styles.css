@@ -250,6 +250,11 @@ main {
   text-align: left;
   font: inherit;
   cursor: pointer;
+  list-style: none;
+}
+
+.intro__meta-toggle::-webkit-details-marker {
+  display: none;
 }
 
 .intro__meta-toggle:focus-visible {
@@ -265,7 +270,7 @@ main {
   transition: transform 180ms ease;
 }
 
-.intro__meta-toggle[aria-expanded="true"] .intro__meta-marker {
+.intro__meta-item[open] .intro__meta-marker {
   transform: translateY(-0.06rem) rotate(45deg);
 }
 
